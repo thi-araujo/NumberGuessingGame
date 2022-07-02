@@ -19,9 +19,10 @@ def start_game():
 
     player_name = input("Digite seu nome: ")
 
-    wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (Digite: Yes/No) ".format(player_name))
+    wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (Digite: Sim/Não) ".format(player_name))
 
-    # Função show_score
+# Função show_score
+
 
     tentativa = 0
 
@@ -38,5 +39,20 @@ def start_game():
         if int(guess) == random_number:
 
         print("Muito bom! Você entendeu!")
+
+        tentativa += 1
+        lista_tentativa.append(tentativa)
+        print("Foram necessárias {} tentativas".format(tentativa))
+
+    jogar_de_novo = input("Gostaria de jogar novamente? Digite Sim/Não")
+    tentativa = 0
+    show_score()
+    random_number = int(random.randint(1,10))
+    if jogar_de_novo.lower() == "Não":
+        print("Isso é legal, tenha uma boa tarde!")
+        break
+
+
+
 
 
