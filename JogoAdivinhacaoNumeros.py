@@ -14,7 +14,6 @@ def show_score():
 
 def start_game():
     random_number = int(random.randint(1, 10))
-
     print("Olá Jogador! Bem Vindo ao Game de Adivinhação!")
 
     player_name = input("Digite seu nome: ")
@@ -51,6 +50,11 @@ def start_game():
     if jogar_de_novo.lower() == "Não":
         print("Isso é legal, tenha uma boa tarde!")
         break
+
+    elif int(guess) > random_number:
+        print("É mais baixo")
+
+    attempts += 1
 
 
 
