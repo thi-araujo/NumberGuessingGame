@@ -54,9 +54,10 @@ def start_game():
     elif int(guess) > random_number:
         print("É mais baixo")
 
-    attempts += 1
+    tentativa += 1
 
+    elif int(guess) < random_number:
 
-
+    print("É mais alto")
 
 
