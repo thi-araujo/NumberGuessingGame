@@ -60,4 +60,9 @@ def start_game():
 
     print("É mais alto")
 
+    tentativa += 1
+
+    except ValueError as err:
+    print("Oh não!!! Esse não é um valor válido. Tente novamente....")
+
 
