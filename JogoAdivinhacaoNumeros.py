@@ -65,10 +65,12 @@ def start_game():
     except ValueError as err:
     print("Oh não!!! Esse não é um valor válido. Tente novamente....")
     print("({})".format(err))
+
     else:
-    print("Isso é legal tenha uma boa tentativa")
+        print("Isso é legal tenha uma boa tentativa")
 
     if __name__ == '__main__':
         start_game()
 
+    else:
 
