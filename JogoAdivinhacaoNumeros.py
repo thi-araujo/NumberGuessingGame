@@ -68,4 +68,7 @@ def start_game():
     else:
     print("Isso é legal tenha uma boa tentativa")
 
+    if __name__ == '__main__':
+        start_game()
+
 
