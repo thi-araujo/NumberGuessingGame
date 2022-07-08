@@ -1,24 +1,32 @@
 #---------------------------------------JOGO ADIVINHAÇÃO DE NÚMEROS----------------------------------------------------
 
 import random
+
 lista_tentativa = []
 
-# funcão
 def show_score():
-    if len(lista_tentativa) <= 0:
-        print("Ate o momento atual não existe pontuação alta, é sua vez para o ponta pé inicial ")
 
+	 if len(lista_tentativa) <= 0:
 
-    else:
-        print("A pontuação mais alta atual é de {} tentativas".format(min(lista_tentativa)))
+		print("Ate o momento atual não existe pontuação alta, é sua vez para o ponta pé inicial ")
+
+	else:
+
+		print("A pontuação mais alta atual é de {} tentativas".format(min(lista_tentativa)))
 
 def start_game():
-    random_number = int(random.randint(1, 10))
-    print("Olá Jogador! Bem Vindo ao Game de Adivinhação!")
 
-    player_name = input("Digite seu nome: ")
 
-    wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (Digite: Sim/Não) ".format(player_name))
+	random_number = int(random.randint(1, 10))
+
+
+	print("Olá Jogador! Bem Vindo ao Game de Adivinhação!")
+
+
+player_name = input("Digite seu nome: ")
+
+
+wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (Digite: Sim/Não) ".format(player_name))
 
 # Função show_score
 
@@ -29,7 +37,7 @@ def start_game():
     while wanna_play.lower() == "yes":
         try:
 
-        guess = input("Escolha um número entre 1 e 10 ")
+        guess = input("Escolha um número entre 1 e 10")
 
         if int(guess) < 1 or int(guess) > 10:
 
@@ -72,5 +80,4 @@ def start_game():
     if __name__ == '__main__':
         start_game()
 
-    else:
 
