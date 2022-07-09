@@ -30,21 +30,19 @@ wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (D
 
 # Função show_score
 
+tentativa = 0
 
-    tentativa = 0
+show_score()
 
-    show_score()
-    while wanna_play.lower() == "yes":
-        try:
+while wanna_play.lower() == "sim":
 
+    try:
         guess = input("Escolha um número entre 1 e 10")
 
-        if int(guess) < 1 or int(guess) > 10:
-
+    if int(guess) < 1 or int(guess) > 10:
         raise ValueError("Por favor, adivinhe um número dentro do intervalo fornecido")
 
-        if int(guess) == random_number:
-
+    if int(guess) == random_number:
         print("Muito bom! Você entendeu!")
 
         tentativa += 1
