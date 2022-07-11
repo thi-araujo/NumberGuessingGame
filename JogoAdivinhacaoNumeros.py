@@ -38,10 +38,11 @@ lista_tentativa.append(tentativa)
 print("Foram necessárias {} tentativas".format(tentativa))
 tentativa = 0
 
-    jogar_de_novo = input("Gostaria de jogar novamente? Digite Sim/Não")
-    tentativa = 0
-    show_score()
-    random_number = int(random.randint(1,10))
+jogar_de_novo = input("Gostaria de jogar novamente? Digite Sim/Não")
+tentativa = 0
+show_score()
+random_number = int(random.randint(1,10))
+
     if jogar_de_novo.lower() == "Não":
         print("Isso é legal, tenha uma boa tarde!")
         break
