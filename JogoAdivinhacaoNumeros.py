@@ -36,6 +36,7 @@ tentativa += 1
 
 lista_tentativa.append(tentativa)
 print("Foram necessárias {} tentativas".format(tentativa))
+
 tentativa = 0
 
 jogar_de_novo = input("Gostaria de jogar novamente? Digite Sim/Não")
@@ -63,9 +64,12 @@ random_number = int(random.randint(1,10))
     print("({})".format(err))
 
     else:
-        print("Isso é legal tenha uma boa tentativa")
+        print("Isso é legal tenha uma boa tentativa e um ótimo jogo")
 
     if __name__ == '__main__':
         start_game()
 
+if __name__ == '__main__':
+    start_game()
 
+# Fim  de jogo
