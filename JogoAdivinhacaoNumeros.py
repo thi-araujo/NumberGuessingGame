@@ -63,6 +63,13 @@ random_number = int(random.randint(1,10))
     print("Oh não!!! Esse não é um valor válido. Tente novamente....")
     print("({})".format(err))
 
+except ValueError as err:
+
+
+	print("Oh no!, that is not a valid value. Try again...")
+
+	print("({})".format(err))
+
     else:
         print("Isso é legal tenha uma boa tentativa e um ótimo jogo")
 
