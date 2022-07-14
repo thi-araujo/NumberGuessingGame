@@ -18,7 +18,7 @@ player_name = input("Digite seu nome: ")
 
 wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (Digite: Sim/Não) ".format(player_name))
 
-# Função show_score
+# Esta é a Função show_score
 
 tentativa = 0
 
@@ -63,12 +63,7 @@ random_number = int(random.randint(1,10))
     print("Oh não!!! Esse não é um valor válido. Tente novamente....")
     print("({})".format(err))
 
-except ValueError as err:
 
-
-	print("Oh no!, that is not a valid value. Try again...")
-
-	print("({})".format(err))
 
     else:
         print("Isso é legal tenha uma boa tentativa e um ótimo jogo")
