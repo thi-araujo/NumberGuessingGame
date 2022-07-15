@@ -71,7 +71,6 @@ random_number = int(random.randint(1,10))
     if __name__ == '__main__':
         start_game()
 
-if __name__ == '__main__':
-    start_game()
 
-# Fim  de jogo
+
+#===============================================FIM DO JOGO=====================================================================
