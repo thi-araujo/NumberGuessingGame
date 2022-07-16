@@ -30,7 +30,7 @@ while wanna_play.lower() == "sim":
     if int(guess) < 1 or int(guess) > 10:
         raise ValueError("Por favor, adivinhe um número dentro do intervalo fornecido")
     if int(guess) == random_number:
-        print("Muito bom! Você entendeu!")
+        print("Excelente! Você compreendeu!")
 
 tentativa += 1
 
