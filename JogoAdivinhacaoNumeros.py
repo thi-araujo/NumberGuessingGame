@@ -1,4 +1,4 @@
-#---------------------------------------JOGO ADIVINHAÇÃO DE NÚMEROS----------------------------------------------------
+0#---------------------------------------JOGO ADIVINHAÇÃO DE NÚMEROS----------------------------------------------------
 
 import random
 
@@ -12,7 +12,7 @@ def show_score():
 
 def start_game():
 	random_number = int(random.randint(1, 10))
-	print("Olá Jogador! Bem Vindo ao Game de Adivinhação!")
+	print("Olá Jogador! Seja Bem Vindo ao Jogpo de Adivinhação!")
 
 player_name = input("Digite seu nome: ")
 
