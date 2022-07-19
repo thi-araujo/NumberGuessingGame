@@ -12,7 +12,7 @@ def show_score():
 
 def start_game():
 	random_number = int(random.randint(1, 10))
-	print("Olá Jogador! Seja Bem Vindo ao Jogpo de Adivinhação!")
+	print("Olá Jogador! Seja Bem Vindo ao Jogp de Adivinhação!")
 
 player_name = input("Digite seu nome: ")
 
@@ -45,7 +45,7 @@ show_score()
 random_number = int(random.randint(1,10))
 
     if jogar_de_novo.lower() == "Não":
-        print("Isso é legal, tenha uma boa tarde!")
+        print("Isso é legal, tenha um excelente dia!")
         break
 
     elif int(guess) > random_number:
