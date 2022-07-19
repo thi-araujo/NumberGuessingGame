@@ -1,4 +1,4 @@
-0#---------------------------------------JOGO ADIVINHAÇÃO DE NÚMEROS----------------------------------------------------
+#---------------------------------------JOGO ADIVINHAÇÃO DE NÚMEROS----------------------------------------------------
 
 import random
 
@@ -60,7 +60,7 @@ random_number = int(random.randint(1,10))
     tentativa += 1
 
     except ValueError as err:
-    print("Oh não!!! Esse não é um valor válido. Tente novamente....")
+    print("Oh não!!! Esse não é um valor válido. Por favor, tente novamente....")
     print("({})".format(err))
 
 
