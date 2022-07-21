@@ -66,7 +66,7 @@ random_number = int(random.randint(1,10))
 
 
     else:
-        print("Isso é legal tenha uma boa tentativa e um ótimo jogo")
+        print("Isso é legal tenha uma ótima tentativa e um excelente jogo")
 
     if __name__ == '__main__':
         start_game()
