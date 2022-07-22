@@ -74,14 +74,12 @@ random_number = int(random.randint(1,10))
 
 
 
+def show_score():
+    if len(lista_tentativa) <= 0:
+        print("Ate o momento atual não existe pontuação alta, é sua vez para o ponta pé inicial ")
+	else:
+		print("A pontuação mais alta atual é de {} tentativas".format(min(lista_tentativa)))
 
-while wanna_play.lower() == "sim":
-    try:
-        guess = input("Escolha um número entre 1 e 10")
-    if int(guess) < 1 or int(guess) > 10:
-        raise ValueError("Por favor, adivinhe um número dentro do intervalo fornecido")
-    if int(guess) == random_number:
-        print("Excelente! Você compreendeu!")
 
 
 #===============================================FIM DO JOGO=====================================================================
