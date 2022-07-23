@@ -73,12 +73,19 @@ random_number = int(random.randint(1,10))
 
 
 
+def start_game():
+	random_number = int(random.randint(1, 10))
+	print("Olá Jogador! Seja Bem Vindo ao Jogp de Adivinhação!")
 
-def show_score():
-    if len(lista_tentativa) <= 0:
-        print("Ate o momento atual não existe pontuação alta, é sua vez para o ponta pé inicial ")
-	else:
-		print("A pontuação mais alta atual é de {} tentativas".format(min(lista_tentativa)))
+player_name = input("Digite seu nome: ")
+
+wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (Digite: Sim/Não) ".format(player_name))
+
+# Esta é a Função show_score
+
+tentativa = 0
+
+show_score()
 
 
 
