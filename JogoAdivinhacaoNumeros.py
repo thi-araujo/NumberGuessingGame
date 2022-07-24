@@ -73,20 +73,10 @@ random_number = int(random.randint(1,10))
 
 
 
-def start_game():
-	random_number = int(random.randint(1, 10))
-	print("Olá Jogador! Seja Bem Vindo ao Jogp de Adivinhação!")
 
-player_name = input("Digite seu nome: ")
-
-wanna_play = input("Olá, {}, voce gostaria de jogar o Game de Adivinhação? (Digite: Sim/Não) ".format(player_name))
-
-# Esta é a Função show_score
-
+jogar_de_novo = input("Gostaria de jogar novamente? Digite Sim/Não")
 tentativa = 0
-
 show_score()
-
 
 
 #===============================================FIM DO JOGO=====================================================================
